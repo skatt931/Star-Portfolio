@@ -1,2 +1,31 @@
+@font-face {
+  font-family: "starjedi";
+  src: url("../fonts/StarJedi/starjedi/Starjedi.ttf"); }
+
+@font-face {
+  font-family: "starjout";
+  src: url("../fonts/StarJedi/starjout/Starjout.ttf"); }
+
+@font-face {
+  font-family: "stjedise";
+  src: url("../fonts/StarJedi/stjedise/STJEDISE.TTF"); }
+
+@font-face {
+  font-family: "stjelogo";
+  src: url("../fonts/StarJedi/stjelogo/Strjmono.ttf"); }
+
+p {
+  font-family: "starjout";
+  font-size: 70px;
+  color: yellow; }
+
 body {
-  background-color: green; }
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-image: url("../img/background.jpg"); }
+
+.hidden {
+  display: none; }

@@ -1,21 +1,46 @@
+@font-face {
+  font-family: "starjedi";
+  src: url("../fonts/StarJedi/starjedi/Starjedi.ttf")
+}
+@font-face {
+  font-family: "starjout";
+  src: url("../fonts/StarJedi/starjout/Starjout.ttf")
+}
+@font-face {
+  font-family: "stjedise";
+  src: url("../fonts/StarJedi/stjedise/STJEDISE.TTF")
+}
+@font-face {
+  font-family: "stjelogo";
+  src: url("../fonts/StarJedi/stjelogo/Strjmono.ttf")
+}
+
 @import 'variables';
 @import 'mixins';
 
+//@include font-face(Starjedi, fonts/Starjedi);
+//@include font-face(Star_Jedi_Rounded, fonts/Starjedi);
+//@include font-face(Starjhol, fonts/Starjedi);
 
+p {
+  font-family: "starjout";
+  font-size: 70px;
+  color: yellow;
+}
 
 body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.6;
-	font-family: "RobotoRegular", sans-serif;
-	overflow-x: hidden;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  //font-family: "RobotoRegular", sans-serif;
+  overflow-x: hidden;
+  background-image: url('../img/background.jpg');
 }
+
 .hidden {
-	display: none;
+  display: none;
 }
-
-
 
 //ALWAYS END
 @import 'media';
