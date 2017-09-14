@@ -31,11 +31,11 @@ p {
 body {
   font-size: 16px;
   min-width: 320px;
-  height: 5000px;
+  height: 2600px;
   position: relative;
   line-height: 1.2;
   //font-family: "RobotoRegular", sans-serif;
-  //overflow-x: hidden;
+  overflow-x: hidden;
   background-image: url('../img/background.jpg');
   //background-position-x: 100%;
 
@@ -46,7 +46,7 @@ header {
 }
 
 #first-block{
-  position: absolute;
+  position: relative;
 }
 
 #face-img {
@@ -55,6 +55,32 @@ header {
 
 .speciality {
   font-size: 35px;
+}
+
+//Second block
+#second-block {
+  position: relative;
+  top: 13%;
+  font-family: starjedi;
+  color: yellow;
+}
+
+//Third block
+#third-block {
+  position: relative;
+  top: 26%;
+  .text-block {
+    font-size: 25px;
+  }
+}
+
+//fourth block
+#fourth-block {
+  position: relative;
+  top: 39%;
+  p {
+    font-size: 300px;
+  }
 }
 
 .hidden {
