@@ -47,19 +47,24 @@ td, th {
 body {
   font-size: 16px;
   min-width: 320px;
-  height: 2600px;
+  //height: 2600px;
   position: relative;
   line-height: 1.2;
   //font-family: "RobotoRegular", sans-serif;
-  overflow: hidden;
+  //overflow: hidden;
   background-image: url('../img/background.jpg');
   //background-position-x: 100%;
   background-size: 1000px;
 
 }
 
-header {
-  height: 100px;
+.animation-block {
+  height: 680px;
+  padding-top: 100px;
+}
+
+.animation-block:last-child {
+  height: 200px;
 }
 
 #first-block{
@@ -77,7 +82,8 @@ header {
 //Second block
 #second-block {
   position: relative;
-  top: 13%;
+  padding-top: 250px;
+  //top: 13%;
   font-family: starjedi;
   color: yellow;
 }
@@ -85,7 +91,9 @@ header {
 //Third block
 #third-block {
   position: relative;
-  top: 26%;
+  width: 1450px;
+  padding: 250px 0 0 350px;
+  //top: 26%;
   .text-block {
     font-size: 25px;
   }
@@ -94,7 +102,23 @@ header {
 //fourth block
 #fourth-block {
   position: relative;
-  top: 39%;
+  //width: 1450px;
+  padding: 150px 0 0 0px;
+  //top: 26%;
+  .text-block {
+    font-size: 25px;
+  }
+  .experience-text {
+    color: yellow;
+    line-height: 30px;
+    list-style-type: none;
+  }
+}
+
+//fifth block
+#fifth-block {
+  position: relative;
+  //top: 39%;
   .links {
     font-size: 300px;
   }
