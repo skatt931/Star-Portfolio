@@ -26,8 +26,18 @@
 	<!--CSS-->
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-	
+<body data-spy="scroll" data-target="#scrolling-progress" data-offset="10">
+<nav id="scrolling-progress" class="navbar navbar-inverse navbar-fixed-bottom">
+	<div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav" style="width: 500px;">
+			<li><a href="#first-block" data-toggle="tooltip" title="Ihor Kurnytskyi"></a></li>
+			<li><a href="#second-block" data-toggle="tooltip" title="Technologies"></a></li>
+			<li><a href="#third-block" data-toggle="tooltip" title="About me"></a></li>
+			<li><a href="#fourth-block" data-toggle="tooltip" title="My experience"></a></li>
+			<li><a href="#fifth-block" data-toggle="tooltip" title="Contacts"></a></li>
+		</ul>
+	</div>
+</nav>
 	<div id="first-block" class="container animation-block">
 		<div class="row">
 			<div class="col-md-2"></div>
@@ -48,7 +58,7 @@
 				<thead>
 				<tr>
 					<!--<th>#</th>-->
-					<th class="text-center">tecnology</th>
+					<th class="text-center">technology</th>
 					<th class="text-center">how long</th>
 					<th class="text-center">how good</th>
 				</tr>

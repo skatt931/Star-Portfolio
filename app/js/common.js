@@ -10,6 +10,7 @@ $(function() {
 			$("#second-block").css("left", (70 - (scroled*0.1)) + "%");
 			$("#third-block").css("left", (120 - (scroled*0.1)) + "%");
 			$("#fourth-block").css("left", (205 - (scroled*0.1)) + "%");
+			$("#fifth-block").css("left", (270 - (scroled*0.1)) + "%");
 
 			$("body").css("background-position-x",(100 + (scroled * 0.25)) + "%");
 		});

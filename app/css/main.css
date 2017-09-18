@@ -22,28 +22,44 @@ p {
 td, th {
   border: none !important; }
 
-#next {
-  position: fixed;
-  top: 90%;
-  left: 90%;
-  font-family: starjedi;
-  background-color: black;
-  color: yellow; }
-
 ::-webkit-scrollbar {
   display: none; }
 
 body {
   font-size: 16px;
+  letter-spacing: 4px;
   min-width: 320px;
   position: relative;
   line-height: 1.2;
+  overflow: hidden;
   background-image: url("../img/background.jpg");
   background-size: 1000px; }
 
+#scrolling-progress {
+  background: none;
+  border: none;
+  z-index: 1; }
+  #scrolling-progress ul {
+    margin-left: 600px; }
+  #scrolling-progress li a {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 0.2;
+    background-color: yellow; }
+  #scrolling-progress .active {
+    margin-bottom: 10px; }
+    #scrolling-progress .active a {
+      width: 17px;
+      height: 17px;
+      opacity: 0.5; }
+
 .animation-block {
   height: 680px;
-  padding-top: 100px; }
+  padding-top: 100px;
+  z-index: 0; }
 
 .animation-block:last-child {
   height: 200px; }
@@ -78,7 +94,8 @@ body {
   #fourth-block .experience-text {
     color: yellow;
     line-height: 30px;
-    list-style-type: none; }
+    list-style-type: none;
+    letter-spacing: 1px; }
 
 #fifth-block {
   position: relative; }
@@ -86,6 +103,15 @@ body {
     font-size: 300px; }
   #fifth-block .contacts {
     font-size: 35px; }
+
+#next {
+  position: fixed;
+  top: 90%;
+  left: 90%;
+  font-family: starjedi;
+  background-color: black;
+  color: yellow;
+  z-index: 2; }
 
 .hidden {
   display: none; }
