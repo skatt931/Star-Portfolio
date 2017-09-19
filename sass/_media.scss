@@ -1,1 +1,85 @@
 @import 'variables';
+
+@media screen and (max-width: 480px) {
+  body {
+    overflow: auto;
+  }
+
+  #scrolling-progress {
+    display: none;
+  }
+  #face-img {
+    max-width: 80%;
+  }
+  .animation-block {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    //height: 380px;
+    //padding-top: 100px;
+    z-index: 0;
+  }
+  
+  #first-block {
+    margin-top: 50px;
+  }
+
+  .name {
+    margin-top: 40px ;
+    font-size: 38px;
+  }
+  .speciality {
+    font-size: 20px;
+  }
+
+  #second-block {
+    margin-top: 100px;
+    padding: 0;
+  }
+
+  #third-block {
+    display: none;
+    position: relative;
+    padding: 0;
+    width: 400px;
+    margin-left: -290px;
+    margin-top: 50px;
+    .text-block {
+      font-size: 1.5em;
+      margin-left: 350px;
+    }
+  }
+
+  //fourth block
+  #fourth-block {
+    position: relative;
+    //padding: 850px 0 0 0px;
+    //margin-top: 70px;
+    p {
+      font-size: 2em;
+      padding-left: 25px;
+    }
+    .text-block {
+      font-size: 1.5em;
+    }
+  }
+
+  //fifth block
+  #fifth-block {
+    margin-top: 100px;
+    padding-bottom: 100px;
+    .links {
+      font-size: 100px;
+    }
+    .contacts {
+      font-size: 35px;
+    }
+  }
+
+  #next {
+    display: none;
+  }
+}

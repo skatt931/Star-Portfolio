@@ -39,8 +39,7 @@ td, th {
 body {
   font-size: 16px;
   letter-spacing: 4px;
-  min-width: 320px;
-  //height: 2600px;
+  //min-width: 320px;
   position: relative;
   line-height: 1.2;
   //font-family: "RobotoRegular", sans-serif;
@@ -55,7 +54,8 @@ body {
   border: none;
   z-index: 1;
   ul{
-   margin-left: 600px;
+    width: 120px;
+    margin-left: calc(50% - 60px);
   }
   li {
     a {
@@ -115,7 +115,6 @@ body {
   position: relative;
   width: 1450px;
   padding: 250px 0 0 350px;
-  //top: 26%;
   .text-block {
     font-size: 25px;
   }
