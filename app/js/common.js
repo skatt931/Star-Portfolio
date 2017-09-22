@@ -35,7 +35,17 @@ $(function() {
 			$('html, body').animate({
 				scrollTop: scroll[i],
 			}, 1000);
-		});
+		}).hover( function() {
+			$(this).animate({
+                width: '90px',
+                height: '38px'
+            })
+		}, function() {
+            $(this).animate({
+                width: '84px',
+                height: '34px'
+            })
+        });
 	}
 
 
