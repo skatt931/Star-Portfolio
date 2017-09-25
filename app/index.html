@@ -20,6 +20,9 @@
 	<!-- Bootstrap-->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 
+	<!-- NanoGallery2 -->
+	<link rel="stylesheet" href="libs/nanogallery2-1.5.0/dist/css/nanogallery2.min.css">
+
 	<!-- Font Awesome-->
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 
@@ -114,25 +117,56 @@
 
     <div id="fourth-block" class="container animation-block">
         <div class="row">
-            <div class="col-md-12 text-center wow bounceInUp">
-                <p>my experience</p>
-                <ul class="experience-text">
-                    <li>
-                        <strong>SiteKafe company</strong>
-                        <em>Front-end developer</em>
-                        <br>
-                        <em>Project: Tur galychyna</em> Responsibilities: Page layout, CSS coding using preprocessor SCSS and framework Bootstrap 3. Adding functionality using JS and JQuery. Working with Wordpress admin. Working with SQL Database content.
-                        Project: HRM The most favourite project, it's real-time single page application. I was a front-end developer on this project. The top idea of the project was not new but the main accent was on real-time and its implementation. Actually, it is a hiring system that helps human resource managers / recruiters manage the process of hiring. There was used the stack of technologies mentioned above – Gulp, SASS, Underscore, Babel, Bootstrap 3, ES6.
-                    </li>
-                    <li>
-                        <strong>Self-employed</strong>
-                        <em>Front-end developer</em>
-                        <br>
-                        <em>Project: Intersono</em> Responsibilities: Building progect with Gulp and using it’s functionality to working with progect. Convert Graphics Mockups into HTML Mockups using Twitter Bootstrap 3, SASS and JQuery. Responsive design of web-page.
-                    </li>
-                </ul>
-            </div>
-        </div>
+
+            <div data-nanogallery2='{
+        "thumbnailBorderVertical": 0,
+        "thumbnailBorderHorizontal": 0,
+        "thumbnailDisplayTransition": "flipUp",
+        "thumbnailLabel": {
+          "position": "overImageOnTop",
+          "align": "left"
+        },
+        "thumbnailHoverEffect2": "title_margin-left_-500px_20px_400|title_background_#fff_#fff_1|thumbnail_scale_1_1.15_300",
+        "thumbnailAlignment": "center"
+      }'>
+                    <!--<a href="img/portfolio/english.png" data-ngThumb="img/portfolio/english.png"> English </a>-->
+                    <!--<a href="img/portfolio/english2.png" data-ngThumb="img/portfolio/english2.png">English</a>-->
+                    <!--<a href="img/portfolio/english3.png" data-ngThumb="img/portfolio/english3.png">English</a>-->
+                <!-- first album -->
+                <a href="img/portfolio/english.png"           data-ngkind="album" data-ngid="1"                     data-ngthumb="img/portfolio/english.png"> English </a>
+                <a href="img/portfolio/english.png"                     data-ngid="10" data-ngalbumid="1" data-ngthumb="img/portfolio/english.png">Image 1 / album A</a>
+                <a href="img/portfolio/english2.png"                     data-ngid="11" data-ngalbumid="1" data-ngthumb="img/portfolio/english2.png">Image 2 / album A</a>
+                <a href="img/portfolio/english3.png"                     data-ngid="12" data-ngalbumid="1" data-ngthumb="img/portfolio/english3.png">Image 2 / album A</a>
+                <a href="img/portfolio/english4.png"                     data-ngid="13" data-ngalbumid="1" data-ngthumb="img/portfolio/english4.png">Image 2 / album A</a>
+
+                <!-- second album -->
+                <a href="img/portfolio/intersono.png"          data-ngkind="album" data-ngid="2"                     data-ngthumb="img/portfolio/intersono.png">Intersono</a>
+                <a href="img/portfolio/intersono.png"                     data-ngid="20" data-ngalbumid="2" data-ngthumb="img/portfolio/intersono.png"   >Image1</a>
+                <a href="img/portfolio/intersono2.png"                     data-ngid="21" data-ngalbumid="2" data-ngthumb="img/portfolio/intersono2.png"   >Image2</a>
+                <a href="img/portfolio/intersono3.png"                     data-ngid="22" data-ngalbumid="2" data-ngthumb="img/portfolio/intersono3.png"   >Image3</a>
+                
+                <!-- third album-->
+                <a href="img/portfolio/MacKeeper.png" data-ngkind="album" data-ngid="3" data-ngthumb="img/portfolio/MacKeeper.png">  MacKeeper </a>
+                <a href="img/portfolio/MacKeeper.png" data-ngid="30" data-ngalbumid="3" data-ngthumb="img/portfolio/MacKeeper.png"> MacKeeper</a>
+                <a href="img/portfolio/MacKeeper2.png" data-ngid="31" data-ngalbumid="3" data-ngthumb="img/portfolio/MacKeeper2.png"> MacKeeper</a>
+
+                <!-- fourth album -->
+                <a href="img/portfolio/singolo.png" data-ngkind="album" data-ngid="4" data-ngthumb="img/portfolio/singolo.png">  Singolo </a>
+                <a href="img/portfolio/singolo.png" data-ngid="40" data-ngalbumid="4" data-ngthumb="img/portfolio/singolo.png"> Singolo</a>
+                <a href="img/portfolio/singolo2.png" data-ngid="41" data-ngalbumid="4" data-ngthumb="img/portfolio/singolo2.png"> Singolo</a>
+                <a href="img/portfolio/singolo3.png" data-ngid="42" data-ngalbumid="4" data-ngthumb="img/portfolio/singolo3.png"> Singolo</a>
+                <a href="img/portfolio/singolo4.png" data-ngid="43" data-ngalbumid="4" data-ngthumb="img/portfolio/singolo4.png"> Singolo</a>
+                <a href="img/portfolio/singolo5.png" data-ngid="44" data-ngalbumid="4" data-ngthumb="img/portfolio/singolo5.png"> Singolo</a>
+
+                <!-- fifth album -->
+                <a href="img/portfolio/photographer.png" data-ngkind="album" data-ngid="5" data-ngthumb="img/portfolio/photographer.png">  Photographer </a>
+                <a href="img/portfolio/photographer.png" data-ngid="50" data-ngalbumid="5" data-ngthumb="img/portfolio/photographer.png"> Photographer</a>
+                <a href="img/portfolio/photographer2.png" data-ngid="51" data-ngalbumid="5" data-ngthumb="img/portfolio/photographer2.png"> Photographer</a>
+                <a href="img/portfolio/photographer3.png" data-ngid="52" data-ngalbumid="5" data-ngthumb="img/portfolio/photographer3.png"> Photographer</a>
+                <a href="img/portfolio/photographer4.png" data-ngid="53" data-ngalbumid="5" data-ngthumb="img/portfolio/photographer4.png"> Photographer</a>
+                <a href="img/portfolio/photographer5.png" data-ngid="54" data-ngalbumid="5" data-ngthumb="img/portfolio/photographer5.png"> Photographer</a>
+                </div>
+			</div>
     </div>
 
     <div id="fifth-block" class="container animation-block">
@@ -156,6 +190,8 @@
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<!-- Wow.js library-->
 	<script src="libs/wow-mit/dist/wow.min.js"></script>
+	<!-- NanoGallery2-->
+	<script src="libs/nanogallery2-1.5.0/dist/jquery.nanogallery2.min.js"></script>
 	<!--Main JavaScript-->
 	<script src="js/common.js"></script>
 </body>
