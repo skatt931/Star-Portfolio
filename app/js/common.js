@@ -47,12 +47,10 @@ $(function() {
                 height: '34px'
             })
         });
-		$(window).keypress(function(){
-			if(event.which == 32) {
-				moveNext();
-			}
-		})
+		//$(window).keypress(function(){
+		//	if(event.which == 32) {
+		//		moveNext();
+		//	}
+		//})
 	}
-
-
 });
