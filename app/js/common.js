@@ -26,7 +26,7 @@ $(function() {
 		})
 		console.log(scroll);
 		var i = 0;
-		$('#next').on('click', function() {
+		function moveNext() {
 			scroll[i];
 			i++;
 			if (i>scroll.length - 1) {
@@ -35,7 +35,8 @@ $(function() {
 			$('html, body').animate({
 				scrollTop: scroll[i],
 			}, 1000);
-		}).hover( function() {
+		}
+		$('#next').on('click',moveNext ).hover( function() {
 			$(this).animate({
                 width: '90px',
                 height: '38px'
@@ -46,6 +47,11 @@ $(function() {
                 height: '34px'
             })
         });
+		$(window).keypress(function(){
+			if(event.which == 32) {
+				moveNext();
+			}
+		})
 	}
 
 

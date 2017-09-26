@@ -88,7 +88,8 @@ body {
 
 #fourth-block {
   position: relative;
-  padding: 150px 0 0 0px; }
+  padding: 150px 0 0 0px;
+  overflow-y: auto; }
   #fourth-block .text-block {
     font-size: 25px; }
   #fourth-block .experience-text {
