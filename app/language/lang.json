@@ -1,0 +1,20 @@
+{
+  "eng" : {
+    "name" : "Ihor Kurnytskyi",
+    "tecnologies" : "tecnologies",
+    "howLong" : "How Long",
+    "howGood" : "How Good",
+    "aboutMe" : "I Am Persistent Junior Front-End Developer With Desire To Learn New Top Technologies. Likewise I Am A Good Team Player With Positive Thinking. Currently Looking For An Opportunity To Join A Dynamic, Ambitious, Growing Company And Forge A Career. I Love Working With People, Who Have The Same Passion As I Do.",
+    "myWorks" : "My Works",
+    "myContacts" : "My Contacts"
+  },
+  "ukr" : {
+    "name" : "Ігор Курницький",
+    "tecnologies" : "технології",
+    "howLong" : "Як довго",
+    "howGood" : "Наскільки добре",
+    "aboutMe" : "Про мене",
+    "myWorks" : "Мої роботи",
+    "myContacts" : "Мої контакти"
+  }
+}

@@ -41,6 +41,16 @@
 		</ul>
 	</div>
 </nav>
+
+<button class="language wow pulse" type="button" data-toggle="collapse" data-target="#language-list" aria-expanded="false" aria-controls="collapseExample" data-wow-duration="2s" data-wow-iteration="100"><i class="fa fa-globe fa-2x " aria-hidden="true"></i></button>
+<div class="collapse" id="language-list">
+    <div class="card card-body">
+        <ul>
+            <a href="#" data-lang="eng"><li>English</li></a>
+            <a href="#" data-lang="ukr"><li>Українська</li></a>
+        </ul>
+    </div>
+</div>
 	<div id="first-block" class="container animation-block">
 		<div class="row">
 			<div class="col-md-2"></div>
@@ -48,7 +58,7 @@
 				<div class="text-center">
 					<img src="img/d_dbWgh8I-Y.jpg" id="face-img" class="img-thumbnail wow fadeInDown" alt="Responsive image">
 				</div>
-				<p class="name text-center wow fadeInUp">ihor kurnytskyi</p>
+				<p class="name text-center wow fadeInUp"></p>
 				<p class="speciality text-center wow fadeInUp">frontend developer</p>
 			</div>
 			<div class="col-md-2"></div>
@@ -118,8 +128,10 @@
 	<!--Fourth block, portfolio-->
     <div id="fourth-block" class="container animation-block">
         <div class="row">
-
+			<p class="text-center">My Works</p>
             <div data-nanogallery2='{
+            "thumbnailWidth": "270",
+            "thumbnailHeight": "160",
         "thumbnailBorderVertical": 0,
         "thumbnailBorderHorizontal": 0,
         "thumbnailDisplayTransition": "flipUp",
@@ -128,7 +140,7 @@
           "align": "left"
         },
         "allowHTMLinData": true,
-        "thumbnailHoverEffect2": "title_margin-left_-500px_20px_400|title_color_#000_#ff0_1|thumbnail_scale_1_1.15_300",
+        "thumbnailHoverEffect2": "title_margin-left_-500px_20px_400|title_color_#000_#66d1c8_1|thumbnail_scale_1_1.2_300",
         "galleryDisplayMode": "pagination",
         "thumbnailAlignment": "center",
         "thumbnailGutterWidth": 50,
@@ -184,7 +196,7 @@
     </div>
 
 
-    <button id="next" class="btn btn-warning wow pulse" data-wow-duration="3s" data-wow-iteration="100">n e x t</button>
+    <button id="next" class="btn btn-warning wow pulse" data-wow-duration="3s" data-wow-iteration="100">N e x t</button>
 	
 	<!--JQuery lib-->
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
