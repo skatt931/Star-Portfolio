@@ -53,6 +53,8 @@ $(function() {
         let [$name, $tecnologiesText, $howLongText, $howGoodText, $aboutMeText, $myWorksText, $myContactsText] =
             [$('.name'), $('.tecnoligies-text'), $('.how-long-text'), $('.how-good-text'), $('.about-me-text'),
                 $('.my-works-text'), $('.my-contacts-text')];
+        let iter = 0;
+
 
         function translateText() {
             let _this = $(this);
@@ -61,7 +63,41 @@ $(function() {
                 console.log(_this);
                 console.log(data.eng.name);
 
-                $name.text(data.eng.name);
+                if(iter === 0) {
+                    iter++
+                    console.log('not working');
+                } else {
+                    console.log('working');
+                    localStorage.setItem('language', _this.data('lang'));
+                }
+
+
+                if(localStorage.getItem('language') === 'eng') {
+                    $name.text(data.eng.name);
+                    $tecnologiesText.text(data.eng.tecnologies);
+                    $howLongText.text(data.eng.howLong);
+                    $howGoodText.text(data.eng.howGood);
+                    $aboutMeText.text(data.eng.aboutMe);
+                    $myWorksText.text(data.eng.myWorks);
+                    $myContactsText.text(data.eng.myContacts);
+                } else if (localStorage.getItem('language') === 'ukr') {
+                    $name.text(data.ukr.name);
+                    $tecnologiesText.text(data.ukr.tecnologies);
+                    $howLongText.text(data.ukr.howLong);
+                    $howGoodText.text(data.ukr.howGood);
+                    $aboutMeText.text(data.ukr.aboutMe);
+                    $myWorksText.text(data.ukr.myWorks);
+                    $myContactsText.text(data.ukr.myContacts);
+                } else {
+                    $name.text(data.eng.name);
+                    $tecnologiesText.text(data.eng.tecnologies);
+                    $howLongText.text(data.eng.howLong);
+                    $howGoodText.text(data.eng.howGood);
+                    $aboutMeText.text(data.eng.aboutMe);
+                    $myWorksText.text(data.eng.myWorks);
+                    $myContactsText.text(data.eng.myContacts);
+                }
+
             })
         }
 

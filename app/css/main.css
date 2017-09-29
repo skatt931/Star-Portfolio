@@ -37,14 +37,16 @@ body {
   line-height: 1.2;
   overflow: hidden;
   background-image: url("../img/background2.jpg");
-  background-size: 1370px; }
+  background-size: 1370px;
+  user-select: none; }
 
 .language {
   position: fixed;
   left: calc(100% - 100px);
   top: 5%;
   background: none;
-  border: none; }
+  border: none;
+  z-index: 2; }
   .language:focus {
     outline: none; }
   .language i {
@@ -64,7 +66,8 @@ body {
       text-decoration: none;
       color: #ff4500;
       font-family: "beer money", arial;
-      font-size: 1.2em; }
+      font-size: 1.2em;
+      cursor: pointer; }
     #language-list ul li {
       padding: 10px;
       background-color: #ffd700;
@@ -116,7 +119,7 @@ body {
 
 #second-block {
   position: relative;
-  padding-top: 250px;
+  padding-top: 200px;
   font-family: "beer money", arial;
   font-weight: bold;
   font-size: 1.2em;
@@ -128,11 +131,11 @@ body {
   width: 1450px;
   padding: 250px 0 0 350px; }
   #third-block .text-block {
-    font-size: 2em; }
+    font-size: 2.2em; }
 
 #fourth-block {
   position: relative;
-  padding: 150px 0 0 0px;
+  padding: 100px 0 0 0px;
   overflow-y: auto; }
   #fourth-block .text-block {
     font-size: 25px; }
