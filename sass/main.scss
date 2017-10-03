@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: "starjedi";
   src: url("../fonts/StarJedi/starjedi/Starjedi.ttf")
 }
@@ -26,12 +26,13 @@
 //@include font-face(Star_Jedi_Rounded, fonts/Starjedi);
 //@include font-face(Starjhol, fonts/Starjedi);
 
-p {
+p,h1,h2,h3,h4,h5,h6 {
   font-family: $font;
   text-transform: capitalize;
   font-size: 70px;
   color: $color-text;
 }
+
 
 td, th {
   border: none !important;
@@ -174,6 +175,9 @@ body {
   .text-block {
     font-size: 2.2em;
   }
+}
+#third-block-mobile {
+  display: none;
 }
 
 //fourth block

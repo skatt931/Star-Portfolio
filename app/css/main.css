@@ -18,7 +18,7 @@
   font-family: "beer money";
   src: url("../fonts/beermoney/beer money.ttf"); }
 
-p {
+p, h1, h2, h3, h4, h5, h6 {
   font-family: "beer money", arial;
   text-transform: capitalize;
   font-size: 70px;
@@ -133,6 +133,9 @@ body {
   #third-block .text-block {
     font-size: 2.2em; }
 
+#third-block-mobile {
+  display: none; }
+
 #fourth-block {
   position: relative;
   padding: 100px 0 0 0px;
@@ -178,6 +181,32 @@ body {
     display: none; }
   #face-img {
     max-width: 80%; }
+  .language {
+    position: absolute;
+    left: calc(100% - 30px);
+    top: -3%; }
+    .language i {
+      font-size: 4em; }
+  #language-list {
+    top: 13.5%;
+    left: calc(100% - 260px); }
+    #language-list ul {
+      list-style: none;
+      width: 220px; }
+      #language-list ul a {
+        text-decoration: none;
+        color: #ff4500;
+        font-family: "beer money", arial;
+        font-size: 1.5em;
+        cursor: pointer; }
+      #language-list ul li {
+        padding: 25px;
+        background-color: #ffd700;
+        opacity: .8;
+        border-radius: 5px;
+        border-top: 1px solid #c93bff; }
+        #language-list ul li:hover {
+          opacity: 1; }
   .animation-block {
     position: relative;
     display: block;
@@ -187,34 +216,32 @@ body {
     text-align: center;
     z-index: 0; }
   #first-block {
-    margin-top: 50px; }
+    margin-top: 100px; }
   .name {
     margin-top: 40px;
-    font-size: 38px; }
+    font-size: 3.5em; }
   .speciality {
-    font-size: 20px; }
+    font-size: 2.5em; }
   #second-block {
-    margin-top: 100px;
+    margin-top: 200px;
     padding: 0; }
   #third-block {
-    display: none;
-    position: relative;
-    padding: 0;
-    width: 400px;
-    margin-left: -290px;
-    margin-top: 50px; }
-    #third-block .text-block {
-      font-size: 1.5em;
-      margin-left: 350px; }
+    display: none; }
+  #third-block-mobile {
+    display: block;
+    margin-top: 100px; }
+    #third-block-mobile p {
+      font-size: 2em; }
   #fourth-block {
-    position: relative; }
+    position: relative;
+    margin-top: 80px; }
     #fourth-block p {
       font-size: 2em;
       padding-left: 25px; }
     #fourth-block .text-block {
       font-size: 1.5em; }
   #fifth-block {
-    margin-top: 100px;
+    margin-top: 180px;
     padding-bottom: 100px; }
     #fifth-block .links {
       font-size: 100px; }

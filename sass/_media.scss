@@ -11,6 +11,42 @@
   #face-img {
     max-width: 80%;
   }
+
+  .language {
+    position: absolute;
+    left: calc(100% - 30px);
+    top: -3%;
+    i {
+      font-size: 4em;
+    }
+  }
+  #language-list {
+    top: 13.5%;
+    left: calc(100% - 260px);
+    ul {
+      list-style: none;
+      width: 220px;
+      a {
+        text-decoration: none;
+        color: $color-text;
+        font-family: $font;
+        font-size: 1.5em;
+        cursor: pointer;
+      }
+      li {
+        padding: 25px;
+        background-color: $color4;
+        opacity: .8;
+        border-radius: 5px;
+        border-top: 1px solid $color6;
+        //border-bottom: 1px solid black;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
   .animation-block {
     position: relative;
     display: block;
@@ -24,32 +60,31 @@
   }
   
   #first-block {
-    margin-top: 50px;
+    margin-top: 100px;
   }
 
   .name {
     margin-top: 40px ;
-    font-size: 38px;
+    font-size: 3.5em;
   }
   .speciality {
-    font-size: 20px;
+    font-size: 2.5em;
   }
 
   #second-block {
-    margin-top: 100px;
+    margin-top: 200px;
     padding: 0;
   }
 
   #third-block {
     display: none;
-    position: relative;
-    padding: 0;
-    width: 400px;
-    margin-left: -290px;
-    margin-top: 50px;
-    .text-block {
-      font-size: 1.5em;
-      margin-left: 350px;
+  }
+
+  #third-block-mobile {
+    display: block;
+    margin-top: 100px;
+    p {
+      font-size: 2em;
     }
   }
 
@@ -57,7 +92,7 @@
   #fourth-block {
     position: relative;
     //padding: 850px 0 0 0px;
-    //margin-top: 70px;
+    margin-top: 80px;
     p {
       font-size: 2em;
       padding-left: 25px;
@@ -69,7 +104,7 @@
 
   //fifth block
   #fifth-block {
-    margin-top: 100px;
+    margin-top: 180px;
     padding-bottom: 100px;
     .links {
       font-size: 100px;

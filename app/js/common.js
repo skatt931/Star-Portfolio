@@ -3,7 +3,7 @@ $(function() {
         new WOW().init();
 
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            return
+
         } else {
 
             $(window).on("scroll", function scrollingFunction(e) {
